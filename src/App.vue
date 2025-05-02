@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <TheHeader /> -->
+    <TheHeader />
   <button @click="setSelectedComponent('active-goals')">Active Goals</button>
   <button @click="setSelectedComponent('manage-goals')">Manage Goals</button>
     <!-- <active-goals v-if="selectedComponents === 'active-goals'"></active-goals>
@@ -14,6 +14,7 @@
 </template>
 
 <script>
+import TheHeader from './components/layout/TheHeader.vue';
 import ActiveGoals from './components/ActiveGoals.vue';
 import ManageGoals from './components/ManageGoals.vue';
 
@@ -22,6 +23,7 @@ import ManageGoals from './components/ManageGoals.vue';
 
 export default {
   components: {
+    TheHeader,
     ActiveGoals,
     ManageGoals
  
